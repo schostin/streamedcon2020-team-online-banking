@@ -11,6 +11,6 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Validate
-        uses: sebastianneb-streamedcon2020/streamedcon-terragrunt-deployer-image/actions/activate-gcloud-credentials@activateGcloudCredentials
+        uses: sebastianneb-streamedcon2020/streamedcon-terragrunt-deployer-image/actions/activate-gcloud-credentials@v1.0.1
         with:
           gcloud_credentials_content: ${{ secrets.GOOGLE_CREDENTIALS }}

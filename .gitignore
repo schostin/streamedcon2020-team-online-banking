@@ -6,6 +6,7 @@
 terraform.tfstate.d
 *.tfstate
 *.tfstate.backup
+backend.tf
 
 # Terragrunt
 .terragrunt-cache
