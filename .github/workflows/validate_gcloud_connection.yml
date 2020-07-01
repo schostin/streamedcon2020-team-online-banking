@@ -1,0 +1,16 @@
+name: Validate Google Cloud Connection
+on:
+  push:
+    branches:
+      - "*"
+jobs:
+  validate_google_credentials:
+    name: Validate Google Cloud Connection
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Validate
+        uses: sebastianneb-streamedcon2020/streamedcon-terragrunt-deployer-image/actions/activate-gcloud-credentials@activateGcloudCredentials
+        with:
+          gcloud_credentials_content: ${{ secrets.GOOGLE_CREDENTIALS }}
