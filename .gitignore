@@ -1,0 +1,17 @@
+# Mac specifics
+.DS_Store
+
+# Terraform
+.terraform*
+terraform.tfstate.d
+*.tfstate
+*.tfstate.backup
+
+# Terragrunt
+.terragrunt-cache
+
+# Kitchen
+.kitchen
+
+# Secrets
+google-credentials.json
