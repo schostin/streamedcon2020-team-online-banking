@@ -5,7 +5,7 @@ remote_state {
     if_exists = "overwrite_terragrunt"
   }
   config = {
-    bucket = "mCrzwGpx-eu-online-banking"
+    bucket = "sxghavvu-eu-online-banking"
     prefix = "${path_relative_to_include()}"
   }
 }
